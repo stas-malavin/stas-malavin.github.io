@@ -1,3 +1,4 @@
 name: Stas Malavin
 markdown: kramdown
 parmalink: /blog/:title
+wrongtag: ---
