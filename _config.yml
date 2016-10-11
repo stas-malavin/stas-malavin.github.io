@@ -1,85 +1,80 @@
-# # # # # # # # # # # # #
-#   K i k o - p l u s   #
-# # # # # # # # # # # # #
-
-# Basic
-name:               "Kiko Plus"
-
-
-
+name: "as.data.frame"
+url: "https://stas-malavin.github.io"
 author:
-  name:             your-name
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
-
-# Google-analytics
-google-analytics:
-  id:               ""
-
-# Disqus
-disqus:
-  id:               "your-id"
-
-# URL
-url:                "https://AWEEKJ.github.io"
-#url:               "localhost:4000"
-baseurl:            ""
-
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
-permalink:          /:year-:month-:day/:title/
-
-# Pagination
-paginate:           5
-paginate_path:      /page:num/
-
-# Markdown
-markdown:           kramdown
+  name: "Stas Malavin"
+  email: stas.malavin@gmail.com
+description: "R-view & way-of-life"
+copyright: "(c) Stas Malavin, 2016"
+baseurl: ""
+timezone: Europe/Helsinki
+permalink: /:year-:month-:day/:title/
+encoding: utf-8
+paginate: 5
+paginate_path: "/p:num"
+excerpt_separator: <!--more-->
+markdown: kramdown
 kramdown:
-  imput:            GFM
+  imput: GFM
 
-# Navigation
+exclude:
+
+gems:
+  - jekyll-seo-tag
+  #- jekyll-feed
+  - jekyll-paginate
+  #- jekyll-plantuml
+  #- jekyll-sitemap
+  - jekyll-related-posts
+
 nav:
-  - name:           "About"
-    url:            "/about"
-  - name:           "Archive"
-    url:            "/archive"
-  - name:           "Tags"
-    url:            "/tags"
-  - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+  - name: "About"
+    url: "/about"
+  - name: "Archive"
+    url: "/archive"
+  - name: "Tags"
+    url: "/tags"
+  - name: "Github"
+    url: "https://github.com/stas-malavin/stas-malavin.github.io"
 
-
-
-# Sass
 sass:
-  sass_dir:         _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: compressed
+  deploy_style: compressed
 
 # Scopes
 defaults:
   -
     scope:
-      path:         ""
-      type:         "pages"
+      path: ""
+      type: "pages"
     values:
-      layout:       "page"
+      layout: "page"
   -
     scope:
-      path:         ""
-      type:         "posts"
+      path: ""
+      type: "posts"
     values:
-      layout:       "post"
+      layout: "post"
 
 # jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
-gems:
-  - jekyll-seo-tag
-  - jekyll-paginate
 
-exclude:            [vendor]
+# Google-analytics
+google-analytics:
+  id: ""
+
+# Disqus
+disqus:
+  id: "stas.malavin"
+
+# see https://github.com/alfanick/jekyll-related-posts
+related:
+  max_count: 5
+  min_score: 0.1
+  accuracy: 0.75
+
+# jekyll-feed
+#feed:
+  #title: as.data.frame
+  #subtitle: R-view & way-of-life
+  #path: rss.xml
+
